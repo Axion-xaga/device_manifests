@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Device : POCO X4 GT / Redmi K50i / Redmi Note 11T Pro(+) (xaga) -->
+
+<manifest>
+
+    <!-- Remotes -->
+    <remote name="axion-xaga" fetch="https://github.com/Axion-xaga" revision="16.2" />
+    <remote name="priiii08918" fetch="https://gitlab.com/priiii08918" revision="16.2" />
+
+    <!-- Device Trees -->
+    <project path="device/xiaomi/xaga" name="android_device_xiaomi_xaga" remote="axion-xaga" revision="axion" />
+    <project path="device/xiaomi/mt6895-common" name="android_device_xiaomi_mt6895-common" remote="axion-xaga" revision="16.2" />
+
+    <!-- Kernel -->
+    <project path="kernel/xiaomi/mt6895" name="android_kernel_xiaomi_mt6895" remote="axion-xaga" revision="16.2"
+        clone-depth="1" />
+
+    <!-- Sepolicy -->
+    <project path="device/mediatek/sepolicy_vndr" name="android_device_mediatek_sepolicy_vndr" remote="axion-xaga" revision="16.2" />
+
+    <!-- Hardware -->
+    <project path="hardware/mediatek" name="android_hardware_mediatek" remote="axion-xaga" revision="16.2" />
+    <project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="axion-xaga" revision="16.2" />
+
+    <!-- Proprietary Vendor -->
+    <project path="vendor/xiaomi/xaga" name="android_vendor_xiaomi_xaga" remote="priiii08918" revision="16.2"
+        clone-depth="1" />
+    <project path="vendor/xiaomi/mt6895-common" name="android_vendor_xiaomi_mt6895-common" remote="axion-xaga" revision="16.2"
+        clone-depth="1" />
+
+    <!-- MIUI Camera -->
+    <project path="vendor/xiaomi/miuicamera-xaga" name="proprietary_vendor_xiaomi_miuicamera-xaga" remote="axion-xaga" revision="16.2"
+        clone-depth="1" />
+
+</manifest>
